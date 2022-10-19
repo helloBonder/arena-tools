@@ -1,19 +1,34 @@
 {
   "name": "arena-tools",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Arena dev tools",
+  "private": false,
+  "main": "dist/arena_tools.js",
+  "module": "dist/arena_tools.js",
+  "keywords": ["react", "api", "sdk", "event"],
+  "files": [ "dist", "README.md" ],
+
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ConcoMB/arena-tools.git"
   },
-  "author": "",
+  "author": "Conco MB",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ConcoMB/arena-tools/issues"
   },
-  "homepage": "https://github.com/ConcoMB/arena-tools#readme"
+  "homepage": "https://github.com/ConcoMB/arena-tools#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
 }
