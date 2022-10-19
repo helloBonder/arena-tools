@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Arena dev tools",
   "private": false,
-  "main": "dist/arena_tools.js",
-  "module": "dist/arena_tools.js",
+  "main": "dist/arena-tools.js",
+  "module": "dist/arena-tools.js",
   "keywords": ["react", "api", "sdk", "event"],
   "files": [ "dist", "README.md" ],
 
