@@ -1,5 +1,6 @@
-const EVENT_CONNECTION_PATH = '/event/connect'
-const API_URL = 'http://localhost:8080/'
+const EVENT_CONNECTION_PATH = 'event/connect'
+//const API_URL = 'http://localhost:8080/'
+const API_URL = 'https://arena-api-stage.herokuapp.com/'
 
 async function logAccountConnectedEvent(dApp, walletAddress) {
     if (!dApp || !walletAddress) return false;
@@ -14,12 +15,12 @@ async function logAccountConnectedEvent(dApp, walletAddress) {
             },
         body: JSON.stringify(reqBody),
     };
-    console.log(API_URL + EVENT_CONNECTION_PATH)
     fetch(API_URL + EVENT_CONNECTION_PATH, reqOptions)
         .then(res => {
-            console.log(res);
+            return true
         }).catch(error => {
             console.error(error);
+            return false
         });
 }
 

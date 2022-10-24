@@ -6,7 +6,9 @@ Object.defineProperty(exports, "__esModule", {
 exports.logAccountConnectedEvent = logAccountConnectedEvent;
 require("core-js/modules/es.promise.js");
 require("core-js/modules/es.json.stringify.js");
-const EVENT_CONNECTION_PATH = '/event/connect';
+//import 'core-js'
+
+const EVENT_CONNECTION_PATH = 'event/connect';
 const API_URL = 'http://localhost:8080/';
 async function logAccountConnectedEvent(dApp, walletAddress) {
   if (!dApp || !walletAddress) return false;
@@ -24,6 +26,6 @@ async function logAccountConnectedEvent(dApp, walletAddress) {
   fetch(API_URL + EVENT_CONNECTION_PATH, reqOptions).then(res => {
     console.log(res);
   }).catch(error => {
-    console.log(error);
+    console.error(error);
   });
 }
