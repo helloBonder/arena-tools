@@ -21,7 +21,7 @@ You can track a wallet connection by invoking the `logAccountConnectedEvent(toke
 
 ```javascript
 import React, { Component }  from 'react';
-// Other imports you nede
+// Other imports you need
 import { logAccountConnectedEvent } from 'arena-tools'
 const ARENA_TOKEN = '1234567890' // You'll get your token by signing in our website
 
@@ -37,7 +37,7 @@ You can also track any other event (like pressing a certain button) invoking the
 
 ```javascript
 import React, { Component }  from 'react';
-// Other imports you nede
+// Other imports you need
 import { logCustomEvent } from 'arena-tools'
 const ARENA_TOKEN = '1234567890' // You'll get your token by signing in our website
 
