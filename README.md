@@ -9,6 +9,10 @@
 
 You can get the latest version of Arena tools from [npm](https://www.npmjs.com/package/arena-tools).
 
+```
+npm install arena-tools
+```
+
 Once installed you can begin tracking your events in your code calling these methods:
 
 ### Wallet connection
@@ -40,6 +44,6 @@ const ARENA_TOKEN = '1234567890' // You'll get your token by signing in our webs
 // YOUR CODE HERE
 
 // When a wallet is connected call this method
-logCustomEvent(ARENA_TOKEN, walletAddress, 'button 1');
+logCustomEvent(ARENA_TOKEN, walletAddress, 'button 1'); // 'button 1' being an example of event name 
 
 ```
