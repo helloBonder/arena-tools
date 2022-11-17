@@ -13,7 +13,7 @@ Once installed you can begin tracking your events in your code calling these met
 
 ### Wallet connection
 
-You can track a wallet connection by invoking the `logAccountConnectedEvent` method:
+You can track a wallet connection by invoking the `logAccountConnectedEvent(token, address)` method:
 
 ```javascript
 import React, { Component }  from 'react';
@@ -25,5 +25,21 @@ const ARENA_TOKEN = '1234567890' // You'll get your token by signing in our webs
 
 // When a wallet is connected call this method
 logAccountConnectedEvent(ARENA_TOKEN, walletAddress)
+
+```
+### Custom event
+
+You can also track any other event (like pressing a certain button) invoking the `logCustomEvent(token, address, eventName)` method:
+
+```javascript
+import React, { Component }  from 'react';
+// Other imports you nede
+import { logCustomEvent } from 'arena-tools'
+const ARENA_TOKEN = '1234567890' // You'll get your token by signing in our website
+
+// YOUR CODE HERE
+
+// When a wallet is connected call this method
+logCustomEvent(ARENA_TOKEN, walletAddress, 'button 1');
 
 ```
