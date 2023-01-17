@@ -9,8 +9,8 @@ require("core-js/modules/es.promise.js");
 require("core-js/modules/es.json.stringify.js");
 const CONNECTION_EVENT_PATH = 'event/connect';
 const CUSTOM_EVENT_PATH = 'event/custom';
-const API_URL = 'http://arena-dashboard-production.s3-website-us-west-2.amazonaws.com/';
-//const API_URL = 'https://arena-api-stage.herokuapp.com/'
+const API_URL = 'http://arena-production.eba-2eexbiw4.us-west-2.elasticbeanstalk.com/';
+// const API_URL = 'http://localhost:8080/'
 
 async function logAccountConnectedEvent(token, walletAddress) {
   if (!token || !walletAddress) return false;
