@@ -1,10 +1,10 @@
 {
   "name": "arena-tools",
-  "version": "0.2.3",
+  "version": "1.0.0",
   "description": "Arena dev tools",
   "private": false,
-  "main": "dist/arena-tools.js",
-  "module": "dist/arena-tools.js",
+  "main": "./lib/arena-tools.js",
+  "types": "./lib/arena-tools.d.ts",
   "keywords": [
     "react",
     "api",
@@ -12,11 +12,11 @@
     "event"
   ],
   "files": [
-    "dist",
+    "lib",
     "README.md"
   ],
   "scripts": {
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
+    "build": "npx tsc"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/ConcoMB/arena-tools#readme",
   "devDependencies": {
+    "typescript": "^4.9.5",
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.4",
