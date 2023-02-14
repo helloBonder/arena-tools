@@ -15,35 +15,20 @@ npm install arena-tools
 
 Once installed you can begin tracking your events in your code calling these methods:
 
-### Wallet connection
+### Log Event
 
-You can track a wallet connection by invoking the `logAccountConnectedEvent(token, address)` method:
-
-```javascript
-import React, { Component }  from 'react';
-// Other imports you need
-import { logAccountConnectedEvent } from 'arena-tools'
-const ARENA_TOKEN = '1234567890' // You'll get your token by signing in our website
-
-// YOUR CODE HERE
-
-// When a wallet is connected call this method
-logAccountConnectedEvent(ARENA_TOKEN, walletAddress)
-
-```
-### Custom event
-
-You can also track any other event (like pressing a certain button) invoking the `logCustomEvent(token, address, eventName)` method:
+You can track any event invoking `logEvent(token, address, event_you_want_to_track)` method:
 
 ```javascript
 import React, { Component }  from 'react';
 // Other imports you need
-import { logCustomEvent } from 'arena-tools'
+import { logEvent } from 'arena-tools'
 const ARENA_TOKEN = '1234567890' // You'll get your token by signing in our website
 
 // YOUR CODE HERE
 
-// When a wallet is connected call this method
-logCustomEvent(ARENA_TOKEN, walletAddress, 'button 1'); // 'button 1' being an example of event name 
+// When you want to log an event you have to use this method
+logEvent(ARENA_TOKEN, walletAddress, "event you want to log")
 
 ```
+
