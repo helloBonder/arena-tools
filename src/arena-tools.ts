@@ -2,7 +2,7 @@ const CUSTOM_EVENT_PATH = 'event/custom'
 const API_URL = 'https://api.getarena.xyz/'
 
 async function logEvent(token, walletAddress, event) {
-    if (!token || !event) return false;
+    if (!token || !event || !walletAddress) return false;
     const reqBody = {
         'token': token,
         'event': event,
