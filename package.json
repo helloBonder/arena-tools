@@ -1,6 +1,6 @@
 {
   "name": "arena-tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Arena dev tools",
   "private": false,
   "main": "./lib/arena-tools.js",
